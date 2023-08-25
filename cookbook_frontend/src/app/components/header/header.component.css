@@ -1,0 +1,65 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.left, .center, .right {
+  flex: 1;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hamburger {
+  padding-left: 20px;
+}
+
+.hamburger-image, .love-image, .profile-image {
+  opacity: 0.59;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile div {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  border-radius: 55px;
+}
+
+.profile div span {
+  padding-left: 20px;
+  font-size: 30px;
+}
+
+.profile-image {
+  height: 40px;
+}
+
+.hamburger-image {
+  height: 50px;
+}
+
+.logo-image {
+  height: 150px;
+  border: 1px solid transparent;
+  border-radius: 63px;
+}
+
+.love-image {
+  height: 50px;
+}

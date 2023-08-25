@@ -1,0 +1,6 @@
+<div class="list" *ngIf="this.isLoading() === false">
+  <div class="card" *ngFor="let recipe of recipes()">
+    <app-recipe-card [recipe]="recipe"></app-recipe-card>
+  </div>
+</div>
+

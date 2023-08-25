@@ -1,0 +1,22 @@
+.recipe-card {
+  width: 285px;
+  height: 259px;
+  background-color: white;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.space {
+  height: 80%;
+}
+
+.title {
+  font-size: 0.8rem;
+  height: 20%;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
