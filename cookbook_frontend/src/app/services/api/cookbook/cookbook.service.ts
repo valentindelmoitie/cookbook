@@ -16,6 +16,7 @@ export class CookbookService {
   }
 
   public getRecipeDetails(id: number): Observable<RecipeDetails> {
-    return this.http.get(`http://localhost:3000/recipe/${id}`) as Observable<RecipeDetails>;
+    // TODO : Implement this method
+    return new Observable<RecipeDetails>();
   }
 }

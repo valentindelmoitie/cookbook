@@ -36,7 +36,5 @@ export class RecipeCardListComponent {
       })
   }
 
-  navigateToRecipeDetails(recipeId: number) {
-    this.router.navigate(['recipe', recipeId]);
-  }
+  // TODO: REMOVED NAVIGATION
 }

@@ -12,13 +12,7 @@ app.get('/list-summary', (req: any, res: any) => {
     res.send(recipes);
 });
 
-app.get('/recipe/:id', (req: any, res: any) => {
-    console.log(req.params.id);
-
-    const recipeDetails = getRecipeDetails(req.params.id);
-    
-    res.send(recipeDetails);
-});
+// TODO: Implement get for recipe details
 
 app.listen(port, () => {
     console.log('App is listening on port 3000');

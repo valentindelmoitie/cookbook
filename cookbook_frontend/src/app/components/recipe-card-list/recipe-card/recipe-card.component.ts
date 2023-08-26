@@ -10,5 +10,5 @@ import { RecipeSummary } from 'src/app/models/recipe-summary';
   styleUrls: ['./recipe-card.component.css']
 })
 export class RecipeCardComponent {
-  @Input({required: true}) recipe!: RecipeSummary;
+  // TODO
 }
