@@ -30,6 +30,7 @@
 .profile {
   display: flex;
   align-items: center;
+  height: 20px;
 }
 
 .profile div {
@@ -52,6 +53,10 @@
 
 .hamburger-image {
   height: 50px;
+}
+
+.logo {
+  cursor: pointer;
 }
 
 .logo-image {

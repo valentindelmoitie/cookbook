@@ -1,1 +1,31 @@
-<p>recipe-details works!</p>
+<ng-container *ngIf="recipe$ | async as recipe">
+    <div class="recipe-header" [ngStyle]="{ 'background-image': 'url(' + recipe.imageUrl + ')' }">
+        <div>
+            <h1>{{ recipe.title }}</h1>
+        </div>
+    </div>
+
+
+        <div class="section-container">
+            <h3>Ingrédients</h3>
+    
+            <div *ngFor="let ingredient of recipe.ingredients">
+                <div class="ingredient">
+                    <div class="ingredient-image"><img class="chevron-right" src="assets/icons/chevron-right.png" /></div>
+                    <div class="ingredient-description">{{ ingredient.quantity }} {{ ingredient.unit }} {{ ingredient.name }}</div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="section-container">
+            <h3>Préparation</h3>
+    
+            <div *ngFor="let step of recipe.steps ; let index = index" class="step-container" [style.justify-content]="index % 2 == 0 ? 'left' : 'right'">
+                <div class="step">
+                    <app-step [step]="step"></app-step>
+                </div>
+            </div>
+        </div>    
+
+
+</ng-container>

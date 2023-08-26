@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RecipeCardComponent } from './recipe-card/recipe-card.component';
 import { CookbookService } from 'src/app/services/api/cookbook/cookbook.service';
 import { RecipeSummary } from 'src/app/models/recipe-summary';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-recipe-card-list',
@@ -12,8 +13,8 @@ import { RecipeSummary } from 'src/app/models/recipe-summary';
   styleUrls: ['./recipe-card-list.component.css']
 })
 export class RecipeCardListComponent {
-
   private cookbookService = inject(CookbookService);
+  private router = inject(Router);
 
   private state = signal({
     isLoading: false,
@@ -35,6 +36,7 @@ export class RecipeCardListComponent {
       })
   }
 
-  ngOnInit() {
+  navigateToRecipeDetails(recipeId: number) {
+    this.router.navigate(['recipe', recipeId]);
   }
 }
